@@ -35,6 +35,39 @@ embeddings/
 └── README.md
 ```
 
+## 📋 Environment
+
+This project was developed and tested on **Databricks Runtime 15.x**.
+
+### Recommended Environment
+
+- Databricks Runtime 15.x (or later)
+- Apache Spark
+- Python 3.10+
+- NumPy
+- Pandas
+
+Databricks already includes Apache Spark and most required libraries, so no additional setup is needed.
+
+---
+
+## 💻 Running Outside Databricks
+
+This project can also be adapted to run locally, but you'll need to install and configure:
+
+- Java (JDK 11 or later)
+- Apache Spark 3.5+
+- Python 3.10+
+- PySpark
+
+After configuring Apache Spark, install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+> **Note:** The notebook uses a few Databricks-specific features (such as `display()` and Delta table APIs). If you're running locally, you may need to replace `display()` with `.show()` and configure Spark appropriately.
+
 ---
 
 ## ⚙️ Experiment Configuration
@@ -48,6 +81,7 @@ embeddings/
 | Language | PySpark |
 | Workers | 2 |
 | Worker Memory | 16 GB |
+
 
 ---
 
@@ -80,22 +114,6 @@ embeddings/
 Although Spark distributed the workload across multiple executors, it still scanned **all one million vectors**.
 
 This confirms that brute-force vector search remains an **O(N)** operation, which is why vector databases rely on **Approximate Nearest Neighbor (ANN)** indexes for scalable search.
-
----
-
-## 📋 Prerequisites
-
-- Databricks Runtime **14.x or later** (15.x recommended)
-- Apache Spark
-- Python 3.10+
-- NumPy
-- PySpark
-
-Install additional Python packages if required:
-
-```bash
-pip install -r requirements.txt
-```
 
 ---
 

@@ -1,4 +1,3 @@
-````markdown
 # 🚀 Build • Break • Learn
 
 Welcome to **Build • Break • Learn**!

@@ -78,7 +78,7 @@ Current and upcoming topics include:
 
 ---
 
-# ☁️ Databricks
+# ![alt text](images\dbricks.png)  Databricks
 
 Hands-on experiments covering:
 
@@ -190,4 +190,3 @@ Happy coding! 🚀
 # 📄 License
 
 This repository is licensed under the MIT License.
-````

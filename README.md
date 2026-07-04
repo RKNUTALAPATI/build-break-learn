@@ -78,7 +78,7 @@ Current and upcoming topics include:
 
 ---
 
-# ![alt text](images\dbricks.png)  Databricks
+# 🧱 Databricks
 
 Hands-on experiments covering:
 

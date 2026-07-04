@@ -1,0 +1,5 @@
+job_id,stage_id,num_tasks,executor_run_time_ms,executor_cpu_time_sec,jvm_gc_time_ms,input_bytes,input_records,shuffle_read_bytes,shuffle_write_bytes,memory_bytes_spilled,disk_bytes_spilled
+5,5,3,163,0.0763983,null,0,0,0,0,0,0
+4,4,4,1694,0.1697192,null,0,0,0,0,0,0
+3,3,1,770,0.1242461,null,0,0,0,0,0,0
+2,2,8,99788,19.4348216,null,232255979,1000000,0,0,0,0
